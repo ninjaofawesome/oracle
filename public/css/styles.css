@@ -1,0 +1,108 @@
+
+/*#######GENERAL#####*/
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #000;
+  background-color: #fff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+/*#######PADDING AND MARGINS#######*/
+.header {
+	text-align: center;
+	margin: 0 10%;
+	padding-top: 2%;
+}
+
+.result {
+
+	text-align: center;
+	margin: 0 10%;
+	padding-top: 20%;
+
+}
+
+.center {
+	text-align: center;
+}
+
+.nudge {margin-left: 10px;}
+
+
+
+/*########FONTS##########*/
+
+@font-face {
+	font-family: 'glasgow';
+	src: url('/fonts/strongglasgow-webfont.eot'); 
+	src: url('/fonts/strongglasgow-webfont.eot') format('embedded-opentype'),
+	     url('/fonts/strongglasgow-webfont.woff') format('woff'),
+	     url('/fonts/strongglasgow-webfont.ttf')  format('truetype'), 
+	     url('/fonts/strongglasgow-webfont.svg') format('svg'); 
+	}
+
+@font-face {
+	font-family: 'turnpike';
+	src: url('/fonts/turnpike-webfont.eot'); 
+	src: url('/fonts/turnpike-webfont.eot') format('embedded-opentype'),
+	     url('/fonts/turnpike-webfont.woff') format('woff'),
+	     url('/fonts/turnpike-webfont.ttf')  format('truetype'), 
+	     url('/fonts/turnpike-webfont.svg') format('svg'); 
+	}
+
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+  font-family: 'glasgow', Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.turnpike {
+  font-family: 'turnpike', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  color: inherit;
+}
+
+
+
+.title {
+	font-size: 500%;
+}
+
+
+p {
+  font-family: 'turnpike', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.1;
+  color: inherit;
+	
+}
+
+
+
+
+
+/*#########IMAGES########*/
+
+.cards {
+	border: none;
+	padding: 0 5px;
+}
+
+
+
+
+/*#######LISTS#######*/
+
+
