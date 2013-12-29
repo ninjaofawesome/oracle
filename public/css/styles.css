@@ -6,7 +6,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #000;
-  background-color: #fff;
+  background-color: #707070;
 }
 
 input::-webkit-outer-spin-button,
@@ -103,6 +103,20 @@ p {
 
 
 
-/*#######LISTS#######*/
+/*#######BUTTONS AND INPUT#######*/
+
+.borderless {
+	border: none;
+	background: transparent;
+}
+
+.background {
+	background: #969696;
+}
+
+.backgrounds {
+	background: #969696;
+	border: 2px solid #333;
+}
 
 
