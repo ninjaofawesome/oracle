@@ -95,7 +95,9 @@ class Fortune
 
 	def calculate
 
-		@fortune_array.reduce(:+)
+		# @fortune_array.reduce(:+)
+
+		@fortune_array.inject(0) {|sum, i| sum + i.to_i}
 		
 
 	end
