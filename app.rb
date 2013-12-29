@@ -14,13 +14,23 @@ module Fortuneteller
 
 		post '/answer' do
 			test= Fortune.new(params)
-			if test.calculate == nil
-				"the number is nil"
-			end	
-		
+			test.calculate
+
+			if test.calculate < 5
+				erb :bad
+			elsif test.calculate >= 6 && test.calculate <= 8
+				erb :mediocre
+			elsif test.calculate >= 9 && test.calculate <= 11
+				erb :good
+			elsif test.calculate >=12 && test.calculate <= 14
+				erb :excellent
+			else test.calculate
+				erb :spectacular
+			end
 
 
-			erb :results
+
+			# erb :results
 		end
 
 

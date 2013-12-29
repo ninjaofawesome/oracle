@@ -1,7 +1,7 @@
 
 class Fortune
 
-	attr_accessor :calculate, :magic_number
+	attr_accessor :calculate, :magic_number, :fortune_array
 
 	def initialize(params)
 		@params = params
@@ -95,7 +95,7 @@ class Fortune
 
 	def calculate
 
-		@magic_number = @fortune_array.inject(0) {|sum, i| sum + i.to_i}
+		@fortune_array.inject(0) {|sum, i| sum + i.to_i}
 		
 
 	end
