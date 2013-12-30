@@ -26,7 +26,8 @@ class Fortune
 	end
 
 	def word
-		word = /\b[a-z]/.match(@params["word"])
+		# word = /\b[a-z]/.match(@params["word"])
+		word = /\b([a-z])/.match(@params["word"])[1]
 		if word[0] == 1
 			@fortune_array << 1
 		elsif word[0] == 2

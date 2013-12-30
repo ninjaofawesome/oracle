@@ -15,32 +15,25 @@ module Fortuneteller
 		post '/answer' do
 			test= Fortune.new(params)
 			test.calculate
-			# @magic_number = @fortune_array.reduce(:+)
-
-			# if @magic_number < 5
-			# 	erb :bad
-			# elsif @magic_number >= 6 && @magic_number <= 8
-			# 	erb :mediocre
-			# elsif @magic_number >= 9 && @magic_number <= 11
-			# 	erb :good
-			# elsif @magic_number >=12 && @magic_number <= 14
-			# 	erb :excellent
-			# else @magic_number
-			# 	erb :spectacular
-			# end
+			result = test.calculate
+			
 
 
-			if test.calculate < 5
+			if result < 5
 				erb :bad
-			elsif test.calculate >= 6 && test.calculate <= 8
+			elsif result >= 6 && result <= 8
 				erb :mediocre
-			elsif test.calculate >= 9 && test.calculate <= 11
+			elsif result >= 9 && result <= 11
 				erb :good
-			elsif test.calculate >= 12 && test.calculate <= 14
+			elsif result >= 12 && result <= 14
 				erb :excellent
-			else test.calculate
+			else result
 				erb :spectacular
 			end
+
+     
+        # erb :results
+      end
 
 
 
